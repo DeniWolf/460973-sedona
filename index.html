@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="page-wrapper">
+  <body>
+    <div class="page-wrapper">
     <header class="page-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <div class="logo">
           <img src="http://placehold.it/150x100" width="150" height="100"
                alt="Логотип города Седона">
-        </a>
+        </div>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-video.html">Фото и видео</a></li>
@@ -23,13 +24,13 @@
       <h1 class="visually-hidden">Город Седона</h1>
       <img src="http://placehold.it/1200x510" width="1200" height="510"
                alt="Добро пожаловать в Седону">
-      <p><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <b class="subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+      <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <div class="features">
-        <div class="features-item">
-          <b>Настоящий городок</b>
-          <p>- №1 -</p>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        <div class="features-image">
+          <b class="subtitle">Настоящий городок</b>
+          <p class="reasons">- №1 -</p>
+          <p class="reasons">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <img class="features-image" src="http://placehold.it/800x260" width="800" height="260"
                alt="В Седоне течёт своя жизнь ">
@@ -39,48 +40,48 @@
         <ul class="service-list">
           <li class="service-item">
             <h3>Жильё</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p class="promo">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="service-item">
             <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="promo">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="service-item">
             <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <p class="promo">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
       <div class="features reverse">
-        <div class="feature-item">
-          <b>Там есть мост дьявола</b>
-          <p>- №2 -</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="feature-image">
+          <b class="subtitle">Там есть мост дьявола</b>
+          <p class="reasons">- №2 -</p>
+          <p class="reasons">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
         <img class="features-image" src="http://placehold.it/800x260" width="800" height="260"
                alt="Мост дьявола">
       </div>
       <div class="feature-item">
-        <b>Небольшая площадь</b>
-        <p>- №3 -</p>
-        <p>Все достопримечательности находятся очень близко</p>
+        <b class="subtitle">Небольшая площадь</b>
+        <p class="reasons">- №3 -</p>
+        <p class="reasons">Все достопримечательности находятся очень близко</p>
       </div>
       <div class="feature-item">
-        <b>Красивая дорога</b>
-        <p>- №4- </p>
-        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        <b class="subtitle">Красивая дорога</b>
+        <p class="reasons">- №4- </p>
+        <p class="reasons">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </div>
       <div class="feature-item">
-        <b>Мало туристов</b>
-        <p>- №5 -</p>
-        <p>Большинство едет в Гранд Каньон и толпится там</p>
+        <b class="subtitle">Мало туристов</b>
+        <p class="reasons">- №5 -</p>
+        <p class="reasons">Большинство едет в Гранд Каньон и толпится там</p>
       </div>
       <section class="search-hotels">
-        <p>Заинтересовались?</p>
+        <p class="interest">Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,
            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <h2>Поиск гостиницы в Седоне</h2>
-        <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="search-hotels-form" method="get" action="https://echo.htmlacademy.ru">
           <p class="search-hotels-item">
             <label for="arrival">Дата заезда</label>
             <input type="text" name="arrival-date" value="24 апреля 2017" id="arrival">
@@ -116,5 +117,6 @@
         </a>
       </div>
     </footer>
+    </div>
   </body>
 </html>
