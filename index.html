@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page-wrapper">
     <header class="page-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -19,39 +19,21 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Город Седона</h1>
+      <img src="http://placehold.it/1200x510" width="1200" height="510"
+               alt="Добро пожаловать в Седону">
       <p><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
-      <section class="features">
-        <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
-        <ul class="features-list">
-          <li class="feature-item">
-            <h3>Настоящий городок</h3>
-            <p>- №1 -</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          </li>
-          <li class="feature-item">
-            <h3>Там есть мост дьявола</h3>
-            <p>- №2 -</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </li>
-          <li class="feature-item">
-            <h3>Небольшая площадь</h3>
-            <p>- №3 -</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="feature-item">
-            <h3>Красивая дорога</h3>
-            <p>- №4- </p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="feature-item">
-            <h3>Мало туристов</h3>
-            <p>- №5 -</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <div class="features">
+        <div class="features-item">
+          <b>Настоящий городок</b>
+          <p>- №1 -</p>
+          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <img class="features-image" src="http://placehold.it/800x260" width="800" height="260"
+               alt="В Седоне течёт своя жизнь ">
+      </div>
       <section class="service">
         <h2 class="visually-hidden">Предоставляемые услуги</h2>
         <ul class="service-list">
@@ -69,29 +51,51 @@
           </li>
         </ul>
       </section>
+      <div class="features reverse">
+        <div class="feature-item">
+          <b>Там есть мост дьявола</b>
+          <p>- №2 -</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <img class="features-image" src="http://placehold.it/800x260" width="800" height="260"
+               alt="Мост дьявола">
+      </div>
+      <div class="feature-item">
+        <b>Небольшая площадь</b>
+        <p>- №3 -</p>
+        <p>Все достопримечательности находятся очень близко</p>
+      </div>
+      <div class="feature-item">
+        <b>Красивая дорога</b>
+        <p>- №4- </p>
+        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+      <div class="feature-item">
+        <b>Мало туристов</b>
+        <p>- №5 -</p>
+        <p>Большинство едет в Гранд Каньон и толпится там</p>
+      </div>
       <section class="search-hotels">
-        <h2>Заинтересовались?</h2>
+        <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,
            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <h3>Поиск гостиницы в Седоне</h3>
+        <h2>Поиск гостиницы в Седоне</h2>
         <form class="search-hotels-form" action="https://echo.htmlacademy.ru" method="get">
           <p class="search-hotels-item">
-            Дата заезда
-            <input type="date" name="arrival-date" value="">
+            <label for="arrival">Дата заезда</label>
+            <input type="text" name="arrival-date" value="24 апреля 2017" id="arrival">
           </p>
           <p class="search-hotels-item">
-            Дата отъезда
-            <input type="date" name="departure-date" value="">
+            <label for="departure">Дата отъезда</label>
+            <input type="text" name="departure-date" value="4 июля 2017" id="departure">
           </p>
-          <p class="search-hotels-item">
-            Взрослые
-            <!-- Форма для взрослых -->
-          </p>
-          <p class="search-hotels-item">
-            Дети
-            <!-- Форма для детей -->
-          </p>
-          <button class="button" type="submit">Найти</button>
+          <button type="button">-</button>
+          Взрослые: <input type="number" name="quantity" value="2">
+          <button type="button">+</button>
+          <button type="button">-</button>
+          Дети<input type="number" name="quantity" value="0">
+          <button type="button">+</button>
+          <p><button class="button" type="submit">Найти</button></p>
         </form>
       </section>
     </main>
@@ -100,13 +104,12 @@
         #visitsedona
       </div>
       <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
-        </ul>
+        <a class="social-button" href="#">Twitter</a>
+        <a class="social-button" href="#">Facebook</a>
+        <a class="social-button" href="#">YouTube</a>
       </div>
       <div class="footer-copyright">
+        Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="http://placehold.it/50x50" width="50" height="50"
                alt="Логотип HTMLAcademy">
