@@ -1,0 +1,15 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  display: none;
+}
+.service-item h3 {
+  font-size: 21px;
+}
