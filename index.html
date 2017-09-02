@@ -9,7 +9,7 @@
     <div class="page-wrapper">
     <header class="page-header">
       <div class="logo">
-          <img src="img/logo.png" width="138" height="70"
+        <img src="img/logo.png" width="138" height="70"
                alt="Логотип города Седона">
       </div>
       <nav class="main-navigation">
@@ -23,14 +23,9 @@
     </header>
     <main>
       <h1 class="visually-hidden">Город Седона</h1>
-      <img src="img/background-photo.jpg" width="1200" height="773"
+      <img src="img/intro.jpg" width="1200" height="780"
                alt="Добро пожаловать в Седону">
-      <img src="img/welcome.png" width="188" height="45">
-      <img src="img/decor-line.png" width="256" height="2">
-      <img src="img/to-the-gorgeous.png" width="176" height="30">
-      <img src="img/sedona.png" width="458" height="78">
-      <img src="img/grand-canyon-sucks.png" width="296" height="80">
-      <b class="subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</b>
+      <p class="subtitle">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <div class="features">
         <div class="features-image">
@@ -84,24 +79,32 @@
         <p class="interest">Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,
            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <h2>Поиск гостиницы в Седоне</h2>
+        <button class="modal-search" type="button">Поиск гостиницы в Седоне</button>
         <form class="search-hotels-form" method="get" action="https://echo.htmlacademy.ru">
           <p class="search-hotels-item">
             <label for="arrival">Дата заезда</label>
-            <input type="text" name="arrival-date" value="24 апреля 2017" id="arrival">
+            <input id="arrival" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
           </p>
           <p class="search-hotels-item">
             <label for="departure">Дата отъезда</label>
-            <input type="text" name="departure-date" value="4 июля 2017" id="departure">
+            <input id="departure" type="text" name="departure-date" value="" placeholder="4 июля 2017">
           </p>
-          <button type="button">-</button>
-          Взрослые: <input type="number" name="quantity" value="2">
-          <button type="button">+</button>
-          <button type="button">-</button>
-          Дети<input type="number" name="quantity" value="0">
-          <button type="button">+</button>
+          <label for="adults">Взрослые</label>
+          <button class="button button-less" type="button">-</button>
+          <input id="adults" type="text" name="quantity" value="2">
+          <button class="button button-more" type="button">+</button>
+          <label for="children">Дети</label>
+          <button class="button button-less" type="button">-</button>
+          <input id="children" type="text" name="quantity" value="0">
+          <button class="button button-more" type="button">+</button>
           <p><button class="button" type="submit">Найти</button></p>
         </form>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта штата</h2>
+        <p>
+          <img src="img/map.jpg" width="1200" height="593" alt="Карта штата">
+        </p>
       </section>
     </main>
     <footer class="page-footer">
