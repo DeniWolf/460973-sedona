@@ -13,7 +13,19 @@ a {
   text-decoration: none;
 }
 
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .main-navigation {
+  display: flex;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
@@ -21,6 +33,7 @@ a {
 
 .site-navigation {
   list-style: none;
+  
 }
 
 .site-navigation a {
@@ -47,8 +60,12 @@ a {
   text-align: center;
 }
 
+.features {
+  display: flex;
+}
+
 .features-image {
-  background-image: url("/img/features-image-background.png");
+  background-image: url("../img/features-image-background.png");
 }
 
 .features-image .subtitle,
@@ -57,8 +74,15 @@ a {
   color: #ffffff;
 }
 
+.features-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .features-item {
-  background-image: url("/img/features-item-background.png");
+  background-image: url("../img/features-item-background.png");
+  flex-basis: 400px;
+  outline: 1px solid black;
 }
 
 .features-item .subtitle,
@@ -67,9 +91,35 @@ a {
 }
  
 .service-list {
+  display: flex;
   list-style: none;
+}
+
+.service-item {
+  flex-basis: 400px;
+  outline: 1px solid black;
 }
 
 .service-item h3 {
   font-size: 21px;
+}
+
+.page-footer {
+  display: flex;
+}
+
+.visit-sedona{
+  flex-basis: 400px;
+  outline: 1px solid black;
+}
+
+.footer-social {
+  display: flex;
+  flex-basis: 400px;
+  outline: 1px solid black;
+}
+
+.footer-copyright {
+  flex-basis: 400px;
+  outline: 1px solid black;
 }
