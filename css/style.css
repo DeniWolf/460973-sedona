@@ -9,13 +9,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Tahoma, sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #333333;
   text-transform: uppercase;
-  outline: 1px solid black;
+  color: #333333;
+  background-color: #f2f2f2;
 }
 
 a {
@@ -25,10 +25,11 @@ a {
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .page-header {
-  position: relative; 
+  margin: 0 6%;
 }
 
 .logo {
@@ -45,17 +46,19 @@ a {
 
 .site-navigation {
   display: flex;
+  align-items: center;
   height: 56px;
-  margin: 0 71px;
+  margin: 0;
   padding: 0;
   list-style: none;
-  outline: 1px solid black;
 }
 
 .site-navigation li {
-  flex-basis: 240px;
-  margin: auto;
-  outline: 1px solid black;
+  flex-basis: 20%;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: 20%;
 }
 
 .site-navigation li:nth-child(3),
@@ -135,6 +138,7 @@ a {
 
 .page-footer {
   display: flex;
+  justify-content: space-between;
 }
 
 .visit-sedona{
@@ -143,6 +147,7 @@ a {
 
 .footer-social {
   display: flex;
+  align-items: center;
   outline: 1px solid black;
 }
 
@@ -150,12 +155,49 @@ a {
   outline: 1px solid black;
 }
 
+.container {
+  margin: 0 6%;
+}
+
 .search-filtres-form {
   display: flex;
-  justify-content: space-between;
   outline: 1px solid black;
+}
+
+.filtres-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .search-filtres-form fieldset {
   border: none;
+}
+
+.price {
+  position: relative;
+  left: 45%;
+}
+.sort{
+  margin: 0 20px;
+}
+.sort a{
+  margin: 0 20px;
+}
+.search-result {
+  display:flex;
+  flex-wrap: wrap;
+}
+.search-result-item {
+  display: flex;
+  flex-basis: 100%;
+  outline: 1px solid black;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.social-button {
+  margin: 0 5px;
 }
