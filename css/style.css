@@ -26,6 +26,7 @@ a {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0,1,1,0.2);
 }
 
 .page-header {
@@ -58,7 +59,7 @@ a {
 }
 
 .site-navigation li:nth-child(2) {
-    margin-right: 20%;
+  margin-right: 20%;
 }
 
 .site-navigation li:nth-child(3),
@@ -70,6 +71,14 @@ a {
   color: #000000;
 }
 
+.site-navigation li:nth-child(2) a {
+  margin: 30px;
+}
+
+.site-navigation li:nth-child(3) a {
+  margin: 33px;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #81b3d2;
@@ -77,6 +86,27 @@ a {
 
 .visually-hidden {
   display: none;
+}
+
+.intro {
+  width: 100%;
+  height: 508px;
+  background: url("../img/background-photo.jpg");
+  background-position: 0 -56px;
+  background-color: #81b3d2;
+}
+
+.mask {
+    position: relative;
+}
+
+.mask::before {
+  position: absolute;
+  content: "";
+  top: 451px;
+  width: 1200px;
+  height: 57px;
+  background: url("../img/clipping-mask.png");
 }
 
 .subtitle {
