@@ -15,10 +15,10 @@
         </div>
         <nav class="main-navigation">
           <ul class="site-navigation">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="photo-video.html">Фото и видео</a></li>
-            <li><a href="map.html">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -26,18 +26,16 @@
       <section class="intro">
         <h1 class="visually-hidden">Город Седона</h1>
         <div class="mask"></div>
-      <!--<img class="background-photo" src="img/background-photo.jpg" width="1200" height="780" alt="Добро пожаловать в Седону">
-      <img src="img/clipping-mask.png" width="1200" height="57">-->
       </section>
-      <p class="subtitle">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="slogan">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
       <p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       <div class="features">
         <div class="features-image">
           <p class="subtitle">Настоящий городок</p>
-          <p class="reasons">&mdash; №1 &mdash;</p>
-          <p class="reasons">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+          <p class="reason">&mdash; №1 &mdash;</p>
+          <p class="reason">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img class="features-image" src="img/real-city.jpg" width="800" height="256" alt="В Седоне течёт своя жизнь ">
+        <img src="img/real-city.jpg" width="800" height="256" alt="В Седоне течёт своя жизнь ">
       </div>
       <section class="service">
         <h2 class="visually-hidden">Предоставляемые услуги</h2>
@@ -59,33 +57,36 @@
       <div class="features-reverse">
         <div class="features-image">
           <p class="subtitle">Там есть<br> мост дьявола</p>
-          <p class="reasons">- №2 -</p>
-          <p class="reasons">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <p class="reason">&mdash; №2 &mdash;</p>
+          <p class="reason">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <img class="features-image" src="img/devil-bridge.jpg" width="800" height="256" alt="Мост дьявола">
+        <img src="img/devil-bridge.jpg" width="800" height="256" alt="Мост дьявола">
       </div>
       <div class="features">
         <div class="features-item">
           <p class="subtitle">Небольшая площадь</p>
-          <p class="reasons">- №3 -</p>
-          <p class="reasons">Все достопримечательности находятся очень близко</p>
+          <p class="reason">&mdash; №3 &mdash;</p>
+          <p class="reason">Все достопримечательности находятся очень близко</p>
         </div>
         <div class="features-item">
           <p class="subtitle">Красивая дорога</p>
-          <p class="reasons">- №4- </p>
-          <p class="reasons">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="reason">&mdash; №4 &mdash;</p>
+          <p class="reason">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div>
         <div class="features-item">
           <p class="subtitle">Мало туристов</p>
-          <p class="reasons">- №5 -</p>
-          <p class="reasons">Большинство едет в Гранд Каньон и толпится там</p>
+          <p class="reason">&mdash; №5 &mdash;</p>
+          <p class="reason">Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </div>
       <section class="search-hotels">
-        <p class="interest">Заинтересовались?</p>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <b>Заинтересовались?</b>
         <p>Укажите предполагаемые даты поездки,<br>
            и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="modal-search" type="button">Поиск гостиницы в Седоне</button>
+        <button class="button brown-button modal-button" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+      <section>
         <form class="search-hotels-form" method="get" action="https://echo.htmlacademy.ru">
           <p class="search-hotels-item">
             <label for="arrival">Дата заезда</label>
@@ -96,14 +97,14 @@
             <input id="departure" type="text" name="departure-date" value="" placeholder="4 июля 2017">
           </p>
           <label for="adults">Взрослые</label>
-          <button class="button button-less" type="button">-</button>
+          <button class="button button-less-more" type="button">-</button>
           <input id="adults" type="text" name="quantity" value="2">
-          <button class="button button-more" type="button">+</button>
+          <button class="button button-less-more" type="button">+</button>
           <label for="children">Дети</label>
-          <button class="button button-less" type="button">-</button>
+          <button class="button button-less-more" type="button">-</button>
           <input id="children" type="text" name="quantity" value="0">
-          <button class="button button-more" type="button">+</button>
-          <p><button class="button" type="submit">Найти</button></p>
+          <button class="button button-less-more" type="button">+</button>
+          <p><button class="button blue-button modal-button" type="submit">Найти</button></p>
         </form>
       </section>
       <section class="map">
