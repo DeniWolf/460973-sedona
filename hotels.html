@@ -33,11 +33,11 @@
           <fieldset>
             <div class="filtres-wrap">
               <legend>Инфраструктура:</legend>
-              <input class="visually-hidden" type="checkbox" name="pool" checked id="pool">
+              <input id="pool" type="checkbox" name="pool" checked hidden>
               <label for="pool">Бассейн</label>
-              <input class="visually-hidden" type="checkbox" name="parking" id="parking">
+              <input id="parking" type="checkbox" name="parking" hidden>
               <label for="parking">Парковка</label>
-              <input class="visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+              <input id="wi-fi" type="checkbox" name="wi-fi" hidden>
               <label for="wi-fi">Wi-Fi</label>
             </div>
           </fieldset>
@@ -52,9 +52,20 @@
               <label for="apartments">Апартаменты</label>
             </div>
           </fieldset>
-          <div class="price">
-            <h3>Стоимость в сутки (Р):</h3>
-            <button class="button" type="submit">Показать</button>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (Р)</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+             <button class="button-transparent" type="submit">Показать</button>
           </div>
         </form>
       </section>
