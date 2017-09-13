@@ -77,13 +77,9 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  min-height: 56px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      flex-wrap: wrap; 
   margin: 0;
-  padding: 0;
+  padding: 14px 0 16px;
   list-style: none;
 }
 
@@ -324,6 +320,18 @@ input[type="radio"].visually-hidden {
 
 .brown-button {
   background-color: #766357;
+}
+
+.left-column {
+  margin-right: auto;
+  max-height: 73.5px;
+}
+
+.left-column .blue-button,
+.right-column .brown-button{
+  display: block;
+  margin-top: 14px;
+  padding: 3px 17px;
 }
 
 .brown-button:hover,
@@ -763,24 +771,17 @@ input[type="checkbox"]:checked + label::after {
   display: flex;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 72px;
   border-bottom: 1px solid #f2f2f2;
 }
 
-.search-result-item img{
-  margin-left: 6%;
-}
-
-
-legend {
+.search-filtres-form legend {
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
 }
-
 
 .filter-range {
   width: 318px;
@@ -922,12 +923,11 @@ legend {
 .arrow-down-active path {
   fill: #81b3d2;
 }
-.hotel-info .hotel-title {
-  margin: 0;
-  margin-bottom: -7px;
-}
 
 .hotel-title {
+  margin: 0;
+  margin-top: -5px;
+  margin-bottom: -5px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -936,29 +936,49 @@ legend {
 
 
 .hotel-info {
-  margin-top: -5px;
-  margin-left: 31px;
-  
+  display: flex;
+  flex-basis: 258px;
+  flex-wrap: wrap;
+  margin-left: 31px; 
+}
+
+.hotel-info p{
+  margin: 0;
+  margin-top: 11px
 }
 
 .raiting {
   width: 110px;
   height: 27px;
-  padding: 5px 10px;
+  padding: 4px 10px 7px;
+  margin: 0;
+  text-align: center;
   color: #666666;
   background: #f2f2f2;
 }
 
-.stars ul {
+.stars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 44px;
 }
 
 .stars li {
   width: 18px;
   height: 17px;
-  margin-left: 6px;
+  margin-left: 5px;
   background-image: url(../img/star.svg);
   list-style: none;
 }
+.raiting-value {
+  display: flex;
+  flex-basis: 110px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+
