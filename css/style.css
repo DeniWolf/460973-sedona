@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
   font-family: "PT Sans", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -24,22 +24,13 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
-  white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-
-          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -50,7 +41,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   background-color: #ffffff;
   -webkit-box-shadow: 0 5px 15px rgba(0,1,1,0.2);
-          box-shadow: 0 5px 15px rgba(0,1,1,0.2);
+  box-shadow: 0 5px 15px rgba(0,1,1,0.2);
 }
 
 .page-header {
@@ -66,8 +57,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation {
-  font-weight: 700;
   line-height: 26px;
+  font-weight: 700;
   color: #000000;
   background-color: #ffffff;
 }
@@ -77,9 +68,9 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; 
-  margin: 0;
+      flex-wrap: wrap;
   padding: 14px 0 16px;
+  margin: 0;
   list-style: none;
 }
 
@@ -116,7 +107,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation-active a {
-    color: #766357;
+  color: #766357;
 }
 
 .intro {
@@ -166,16 +157,14 @@ input[type="radio"].visually-hidden {
 .features-image {
   -ms-flex-preferred-size: 400px;
       flex-basis: 400px;
-  padding-top: 47px;
-  padding-right: ;
-  padding-bottom: ;
-  padding-left: ;
+  max-width: 400px;
+  padding: 46px 46px 10px;
   background-color: #81b3d2;
 }
 
 .features-image .subtitle {
   max-width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 25px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -184,11 +173,11 @@ input[type="radio"].visually-hidden {
 }
 
 .features-image .reason {
-  max-width: 77%;
-  margin: 22px auto;
+  margin: 0px auto 21px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  letter-spacing: 0.02px;
   text-align: center;
   color: #ffffff;
 }
@@ -206,14 +195,15 @@ input[type="radio"].visually-hidden {
 .features-item {
   -ms-flex-preferred-size: 400px;
       flex-basis: 400px;
-  height: 256px;
+  min-height: 256px;
+  padding: 47px 10px 10px 10px;
   margin-bottom: 50px;
   background-color: #eeeeee;
 }
 
 .features-item .subtitle {
   max-width: 40%;
-  margin: 47px auto 24px;
+  margin: 0 auto 24px;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -223,7 +213,7 @@ input[type="radio"].visually-hidden {
 
 .features-item .reason {
   max-width: 70%;
-  margin: 21px auto;
+  margin: 0 auto 21px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -234,8 +224,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -268,9 +258,9 @@ input[type="radio"].visually-hidden {
 }
 
 .service-item h3 {
-  font-size: 21px;
   margin: 0;
   margin-bottom: 24px;
+  font-size: 21px;
   color: #000000;
 }
 
@@ -284,19 +274,19 @@ input[type="radio"].visually-hidden {
 
 .search-hotels b {
   display: inline-block;
+  margin-bottom: 24px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  margin-bottom: 24px;
   color: #000000;
 }
 
 
 .search-hotels p {
-  font-size: 14px;
-  line-height: 24px;
   margin:0;
   margin-bottom: 47px;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .map {
@@ -317,21 +307,8 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-
 .brown-button {
   background-color: #766357;
-}
-
-.left-column {
-  margin-right: auto;
-  max-height: 73.5px;
-}
-
-.left-column .blue-button,
-.right-column .brown-button{
-  display: block;
-  margin-top: 14px;
-  padding: 3px 17px;
 }
 
 .brown-button:hover,
@@ -345,9 +322,9 @@ input[type="radio"].visually-hidden {
 
 .modal-button {
   width: 568px;
+  padding: 30px;
   font-size: 21px;
   line-height: 26px;
-  padding: 30px;
 }
 
 .search-hotels-form {
@@ -381,11 +358,11 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin: 0;
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 29px;
 }
 
 .search-hotels-item label {
@@ -421,7 +398,6 @@ input[type="radio"].visually-hidden {
 .calendar:hover,
 .calendar:focus {
   fill: #000000;
-  outline: none;
 }
 
 .calendar:active {
@@ -432,7 +408,6 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  
   width: 50%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -519,6 +494,18 @@ input[type="radio"].visually-hidden {
   margin-bottom: 55px;
 }
 
+.left-column {
+  margin-right: auto;
+  max-height: 73.5px;
+}
+
+.left-column .blue-button,
+.right-column .brown-button{
+  display: block;
+  margin-top: 14px;
+  padding: 3px 17px;
+}
+
 .hotel-title a {
   color: #000000;
 }
@@ -587,11 +574,16 @@ input[type="radio"].visually-hidden {
   background-color: #5496bd;
 }
 
+.social-button:active path{
+  opacity: 0.3;
+}
+
 .footer-copyright {
   padding-top: 40px;
 }
 
-.footer-copyright a {
+.logo-academy {
+  display: inline-block;
   vertical-align: middle;
   margin-left: 2px;
   outline: none;
@@ -603,19 +595,13 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
 }
 
-.footer-copyright a:hover path,
-.footer-copyright a:focus path{
+ .logo-academy:hover path,
+ .logo-academy:focus path{
     fill: #81b3d2;
 }
 
-.footer-copyright a:active {
-    fill: #000000;
-    opacity: 0.3;
-}
-
-.footer-copyright > a {
-  display: inline-block;
-  vertical-align: middle;
+.logo-academy:active path {
+  fill: #bdbbbc;
 }
 
 .search-filtres-form {
@@ -904,6 +890,15 @@ input[type="checkbox"]:checked + label::after {
   fill: #81b3d2;
 }
 
+.arrow:hover path,
+.arrow:focus path {
+  fill: #000000;
+}
+
+.arrow:active path {
+  fill: #81b3d2;
+}
+
 .hotel-title {
   margin: 0;
   margin-top: -5px;
@@ -912,8 +907,6 @@ input[type="checkbox"]:checked + label::after {
   line-height: 26px;
   font-weight: 700;
 }
-
-
 
 .hotel-info {
   display: flex;
@@ -960,5 +953,3 @@ input[type="checkbox"]:checked + label::after {
   flex-wrap: wrap;
   margin-left: auto;
 }
-
-
