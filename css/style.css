@@ -86,11 +86,17 @@ a {
 .site-navigation li:nth-child(4n+1),
 .site-navigation li:nth-child(4n+2) {
   text-align: left;
+  letter-spacing: 0.1px;
 }
 
 .site-navigation li:nth-child(4n+3),
 .site-navigation li:nth-child(4n+4) {
   text-align: right;
+
+}
+
+.site-navigation li:nth-child(4n+3) {
+  letter-spacing: 0.55px;
 }
 
 .site-navigation a {
