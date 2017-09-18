@@ -5,7 +5,7 @@
     <title>Город Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="page-wrapper">
@@ -88,10 +88,13 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта штата</h2>
+          <iframe height="593" width="1200" src="https://www.google.com/maps/embed/v1/search?q=Sedona%2C%20AZ%2C%20United%20States&key=AIzaSyCro3tHChMiGSgzL_9c4i_nZrinIxPum5o&zoom=9&center=34.869854,-111.761137"
+          allowfullscreen>
+          </iframe>
           <img src="img/map.jpg" width="1200" height="593" alt="Карта штата">
         </section>
-        <section class="search-hotels-form">
-          <form class="hotels-form-visible" method="get" action="https://echo.htmlacademy.ru">
+        <section class="search-hotels-form index-zero">
+          <form class="hotels-form-visible hotels-form-hidden" method="get" action="https://echo.htmlacademy.ru">
             <p class="search-hotels-item">
               <label for="arrival">Дата заезда:</label>
               <input id="arrival" type="text" name="arrival-date" value="24 апреля 2017">
@@ -167,5 +170,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
