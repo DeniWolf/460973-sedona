@@ -501,6 +501,8 @@ a {
 
 .hotels-form-visible input:focus {
   background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  outline: none;
 }
 
 .button-less-more {
